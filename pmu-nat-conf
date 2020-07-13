@@ -1,0 +1,1 @@
+sudo iptables-legacy -t nat -A PREROUTING --in-interface tun0 -p tcp --dport 8888 -j DNAT --to-destination 192.168.99.11:8888
